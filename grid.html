@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rate us page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="rumoteCustomizedCSS.css
+        ">
+    </head>
+    
+    <body>
+        <div class="wrapper">
+            <div class="box header"></div>
+            <div class="box content">
+                  
+    
+                <div class="center page active" style="color: rgb(86, 81, 95)">
+                    <h2> Welcome to Alpin Lodge</h2> <br>
+                    <button type="button" class="btn btn-primary btn-lg buttonCheckInOutSize"> Check in </button>
+                    <button type="button" class="btn btn-primary btn-lg buttonCheckInOutSize">Check out </button>
+                </div>
+    
+    
+                <div class="center page" style="color: rgb(86, 81, 95)">
+    
+                    <h2>How was your stay?</h2>
+    
+                    <div style="font-size:50px">
+                        <i id="star1" class="fa-star stars far" onmouseover="updateRating(1)"
+                            onclick="updateRating(1); showResult(1)"></i>
+                        <i id="star2" class="fa-star stars far" onmouseover="updateRating(2)"
+                            onclick="updateRating(2); showResult(2)"></i>
+                        <i id="star3" class="fa-star stars far" onmouseover="updateRating(3)"
+                            onclick="updateRating(3); showResult(3)"></i>
+                        <i id="star4" class="fa-star stars far" onmouseover="updateRating(4)"
+                            onclick="updateRating(4); showResult(4)"></i>
+                        <i id="star5" class="fa-star stars far" onmouseover="updateRating(5)"
+                            onclick="updateRating(5); showResult(5)"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="box footer">
+                <div class="center page" style="color:rgb(239, 236, 245) ">
+                    <h2>We appreciate your feedback.</h2>
+                </div>
+            </div>
+        </div>
+        <script>
+
+
+            function updateRating(clickedStar) {
+                const count = 5;
+                for (let i = 1; i <= count; i++) {
+                    let star = document.getElementById(`star${i}`);
+                    if (i <= clickedStar) {
+                        star.classList.remove("far");
+                        star.classList.add("fas");
+                    }
+                    else {
+                        star.classList.remove("fas");
+                        star.classList.add("far");
+                    }
+                }
+
+            }
+
+            function showResult(ratingToShow) {
+
+                alert(`Your rating is ${ratingToShow}`)
+            }
+        </script>
+    
+    </body>
+    
+    
+    </html>
