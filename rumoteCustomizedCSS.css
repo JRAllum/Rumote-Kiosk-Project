@@ -1,0 +1,67 @@
+body {
+    margin: 40px;
+}
+
+.content {
+    height: 50vh;
+    grid-area: content;
+    position: relative;
+}
+
+.buttonCheckInOutSize {
+    width: 170px;
+
+}
+
+.center {
+    margin: auto;
+    width: auto;
+}
+
+.stars {
+    color: #ffe600
+}
+
+.header {
+    grid-area: header;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+.wrapper {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-rows: 1fr 6fr 1fr;
+    grid-template-areas: "header header header" "content content content" "footer footer footer";
+    background-color: rgb(241, 241, 247);
+    color: rgb(37, 35, 41);
+}
+
+.box {
+    height: auto;
+    display: grid;
+    background-color: #fff;
+    color: rgb(37, 35, 41);
+    border-radius: 5px;
+    padding: 50px;
+    font-size: 150%;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    height: 1fr;
+    background-color: rgb(255,89,96)
+}
+
+.footer {
+    background-color:rgb(0,132,137)
+}
+
+.page {
+    display:none;   
+}
+.active{
+    display: block;
+}
