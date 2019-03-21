@@ -21,17 +21,31 @@
             <div class="box content">
                   
     
-                <div class="center page active" style="color: rgb(86, 81, 95)">
+                <div id="1"class="center page active" style="color: rgb(86, 81, 95)">
                     <h2> Welcome to Alpin Lodge</h2> <br>
                     <button type="button" class="btn btn-primary btn-lg buttonCheckInOutSize"> Check in </button>
                     <button type="button" class="btn btn-primary btn-lg buttonCheckInOutSize">Check out </button>
                 </div>
+                
+                <div id= "2" class="center page" style="color: rgb(86, 81, 95)">
+                <h1> Your booking number</h1> <br>
+                <form class="form-inline mb-3">
+                    <input class="form-control form-control-lg" type="text" placeholder=""> <br>
+                    <input type="submit" class="btn btn-primary btn-lg buttonCheckInOutSize">
+                </form>
+            </div>
+                
+                <div id= "3" class="center page" style="color: rgb(86, 81, 95)">
+                <h4> Name: </h4> <br> <br>
+                <h4> Your have booked three bedroom appartment.</h4> <br> <br>
+                <h4> Date: </h4>
+
+                <button type="button" class="btn btn-primary btn-lg buttonCheckInOutSize bottomright">Proceed </button>
+            </div>
     
     
-                <div class="center page" style="color: rgb(86, 81, 95)">
-    
+                <div id="8" class="center page" style="color: rgb(86, 81, 95)">
                     <h2>How was your stay?</h2>
-    
                     <div style="font-size:50px">
                         <i id="star1" class="fa-star stars far" onmouseover="updateRating(1)"
                             onclick="updateRating(1); showResult(1)"></i>
@@ -45,6 +59,15 @@
                             onclick="updateRating(5); showResult(5)"></i>
                     </div>
                 </div>
+                
+                <div id="10" class="center active page inbox " style="color: rgb(86, 81, 95)">
+                <h2>Please check if you</h2> <br>
+
+                cleaned the appartment: <input type="checkbox" id="myCheck"> <br>
+                have locked the door: <input type="checkbox" id="myCheck"> <br>
+                put the key in the locker: <input type="checkbox" id="myCheck">
+                <button type="button" class="btn btn-primary btn-lg buttonCheckInOutSize bottomright">Proceed </button>
+            </div>
             </div>
             <div class="box footer">
                 <div class="center page" style="color:rgb(239, 236, 245) ">
@@ -52,30 +75,7 @@
                 </div>
             </div>
         </div>
-        <script>
-
-
-            function updateRating(clickedStar) {
-                const count = 5;
-                for (let i = 1; i <= count; i++) {
-                    let star = document.getElementById(`star${i}`);
-                    if (i <= clickedStar) {
-                        star.classList.remove("far");
-                        star.classList.add("fas");
-                    }
-                    else {
-                        star.classList.remove("fas");
-                        star.classList.add("far");
-                    }
-                }
-
-            }
-
-            function showResult(ratingToShow) {
-
-                alert(`Your rating is ${ratingToShow}`)
-            }
-        </script>
+       
     
     </body>
     
