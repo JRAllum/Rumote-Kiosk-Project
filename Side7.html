@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Masterkey screen</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"/>
+
+    <link rel="stylesheet" href="rumoteCustomizedCSS.css"/>
+    <style>
+        .tlf-inline {
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+        }
+        .submit {
+            width: 60px;
+            height: 60px;
+            background-color: blue;
+        }
+        input.tlf {
+            width: 50%;
+            height: 60px;
+        }
+        .conBtn {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+        }
+    </style>
+  </head>
+  <body>
+      <div class="wrapper">
+          <div class="box header"></div>
+          <div class="box content">
+              <div id="side7"></div>
+              <p>Almost done!<br/>
+                We have sent the code to the Masterlock to your mobile number.</p>
+                <h3>+ 47 67236739</h3>
+                <p>Shall we send the code to a different number?</p>
+                <form class="tlf-inline">
+                    <input class="tlf" type="number"><button type="button" class="btn btn-info submit">OK</button>
+                </form>
+                <button type="button" class="btn btn-primary conBtn">Continue</button>
+
+          </div>
+          <div class="box footer"></div>
+      </div>
+  </body>
+</html>
