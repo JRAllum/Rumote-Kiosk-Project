@@ -77,3 +77,30 @@ body {
 .active{
     display: block;
 }
+
+ /* Jans forandringer */
+
+h2 {
+    text-align: center;
+}
+h3 {
+    text-align: center;
+}
+.tlf-inline {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+.submit {
+    width: 60px;
+    height: 60px;
+    background-color: blue;
+}
+input.tlf {
+    width: 50%;
+    height: 60px;
+}
+textarea {
+    height: 80%;
+    width: 100%;
+}
