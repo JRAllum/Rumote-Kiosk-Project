@@ -1,5 +1,5 @@
 function page5() {
-    document.getElementById("content").innerHTML =
+    document.getElementById("mainContent").innerHTML =
             
         `
         <div id="page5">

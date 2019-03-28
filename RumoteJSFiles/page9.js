@@ -1,5 +1,5 @@
 function page9() {
-    document.getElementById('content').innerHTML =
+    document.getElementById('mainContent').innerHTML =
     `
               <div id="side9">
                   <h2>How can we improve?</h2>
