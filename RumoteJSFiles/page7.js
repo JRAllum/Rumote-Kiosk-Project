@@ -1,6 +1,5 @@
 function page7() {
-    document.getElementById('mainContent').innerHTML =
-            `
+  document.getElementById("mainContent").innerHTML = `
               <div id="side7"></div>
               <p>Almost done!<br/>
                 We have sent the code to the Masterlock to your mobile number.</p>
@@ -14,4 +13,3 @@ function page7() {
           </div>
           `;
 }
-          

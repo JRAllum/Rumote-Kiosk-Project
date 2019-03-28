@@ -1,7 +1,5 @@
 function page5() {
-    document.getElementById("mainContent").innerHTML =
-            
-        `
+  document.getElementById("mainContent").innerHTML = `
         <div id="page5">
             <h2>Cleaning instructions</h2>
             <ul>
@@ -15,5 +13,4 @@ function page5() {
             <button type="button" class="btn btn-secondary btn-sm bottomleft">Back</button>
         </div>
         `;
-             
 }
