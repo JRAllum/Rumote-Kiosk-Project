@@ -23,9 +23,9 @@ document.getElementById('mainContent').innerHTML = `
 <h2>Please, check if everything is in order.</h2> <br>
 
 <ul>
-<li> I have cleaned the apartment</li>
-<li>I have locked the door</li>
-<li>I have put the key in the locker</li>
+<li><input type="checkbox">I have cleaned the apartment</input></li>
+<li><input type="checkbox">I have locked the door</input></li>
+<li><input type="checkbox">I have put the key in the locker</input></li>
 
 </ul>
 

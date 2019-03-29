@@ -100,3 +100,6 @@ textarea {
     height: 80%;
     width: 100%;
 }
+ul {
+    list-style: none;
+}
