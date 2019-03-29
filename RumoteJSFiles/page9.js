@@ -1,6 +1,5 @@
 function page9() {
-    document.getElementById('mainContent').innerHTML =
-    `
+  document.getElementById("mainContent").innerHTML = `
               <div id="side9">
                   <h2>How can we improve?</h2>
                   <textarea type="text"></textarea>
@@ -8,4 +7,3 @@ function page9() {
               </div>
     `;
 }
-         

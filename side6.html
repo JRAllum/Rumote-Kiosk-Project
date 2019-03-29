@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Stripe</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="rumoteCustomizedCSS.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="box header"></div>
+      <div class="box content">
+        <div id="mainContent" class="center">
+                <form action="your-server-side-code" method="POST">
+                        <script
+                          src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                          data-key="pk_test_TYooMQauvdEDq54NiTphI7jx"
+                          data-amount="999"
+                          data-name="Stripe.com"
+                          data-description="Example charge"
+                          data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+                          data-locale="auto"
+                          data-zip-code="true">
+                        </script>
+                      </form>
+        </div>
+      </div>
+      <div class="box footer"></div>
+    </div>
+    <script>
+    </script>
+  </body>
+</html>
