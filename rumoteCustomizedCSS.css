@@ -110,3 +110,6 @@ textarea {
     color: orange;
 
   }
+ul {
+    list-style: none;
+}
