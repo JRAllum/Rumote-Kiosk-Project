@@ -24,8 +24,7 @@
       }
       
       form {
-        width: 480px;
-        margin: 20px auto;
+        width: 100%;
       }
 
       label {
@@ -149,7 +148,7 @@
       }
 
       .success {
-        color: #34d08c;
+        font-color: #34d08c;
       }
 
       .success .token {
@@ -201,9 +200,11 @@
                 <div class="error" role="alert"></div>
                 <div class="success">
                   Success! Your Stripe token is <span class="token"></span>
+                  <button type="button" class="btn btn-primary btn-sm bottomright">Continue</button>
                 </div>
               </div>
             </form>
+        
             <script>
                 var stripe = Stripe("pk_test_c1AMZEnN0unLBDXAr9nFo7xG00p6gwDTuQ");
                 var elements = stripe.elements();
