@@ -22,12 +22,24 @@ document.getElementById('mainContent').innerHTML = `
 
 <h2>Please, check if everything is in order.</h2> <br>
 
-<ul>
-<li> I have cleaned the apartment</li>
-<li>I have locked the door</li>
-<li>I have put the key in the locker</li>
+<table style="width:100%">
+<tr>
+    <td>I have cleaned the apartment</td>
+    <td></td>
+    <td><input type="checkbox"></td>
+  </tr>
+  <tr>
+    <td> I have locked the door</td>
+    <td></td>
+    <td><input type="checkbox"></td>
+  </tr>
+  <tr>
+    <td> I have put the key in the locker</td>
+    <td></td>
+    <td><input type="checkbox"></td>
+  </tr>
 
-</ul>
-
+</table>
+<button type="button" class="btn btn-primary btn-lg buttonCheckInOutSize bottomright">Proceed </button>
 `;
 }

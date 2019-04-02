@@ -6,7 +6,7 @@ function page5() {
                 <li>Clean the kitchen, toilets, shower cabins.</li>
                 <li>Wash the dishes and put them in the kitchen cabinets.</li>
                 <li>Make sure the beds are clean and tidy.</li>
-                <li>Vacuum the sofa and floor everywhere including bathroom.</li>
+                <li>Vacuum the sofa and floor everywhere including bathrooms.</li>
             </ul>
             <p>If you do not order the cleaning and the appartment is left unclean we may charge up to 1200 kr.</p>
             <button type="button" class="btn btn-primary btn-sm bottomright">Continue</button>

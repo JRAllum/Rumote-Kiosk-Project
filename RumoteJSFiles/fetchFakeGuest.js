@@ -13,7 +13,7 @@ function fetchFakeGuest(){
         message = "John Smith, you have booked the appartment with 3 bedrooms to.,15.08 - fr., 18.08.";
         break;
         default:
-        message = "Oops, it looks like something got wrong. Please, check your booking number.";
+        message = "Oops, it looks like something went wrong. Please, check your booking number.";
     }
     document.getElementById("mainContent").innerHTML =
     
@@ -21,6 +21,7 @@ function fetchFakeGuest(){
     
     
     <button type="button" class="btn btn-primary btn-lg buttonCheckInOutSize bottomright">Proceed </button>
+    <button type="button" class="btn btn-primary btn-lg buttonCheckInOutSize bottomleft">Go back </button>
 
     `
 }
