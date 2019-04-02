@@ -105,3 +105,8 @@ textarea {
     height: 80%;
     width: 100%;
 }
+// Class for STARS
+.checked {
+    color: orange;
+
+  }
