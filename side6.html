@@ -138,6 +138,10 @@
         font-size: 15px;
       }
 
+      .pay.gone {
+        display: none;
+      }
+
       .success.visible,
       .continue.visible,
       .error.visible {
@@ -149,7 +153,7 @@
       }
 
       .success {
-        font-color: #34d08c;
+        color: #34d08c;
       }
 
       .success .token {
@@ -160,13 +164,6 @@
       .info {
         position: relative;
         left: 10px;
-      }
-      .continue {
-        position: absolute;
-        bottom: 10px;
-        right: 10px;
-        width: 100px;
-        height: 50px;
       }
     </style>
   </head>
@@ -271,6 +268,7 @@
                 var successElement = document.querySelector(".success");
                 var continueElement = document.querySelector(".continue");
                 var errorElement = document.querySelector(".error");
+                var payElement = document.querySelector(".pay");
                 successElement.classList.remove("visible");
                 continueElement.classList.remove("visible");
                 errorElement.classList.remove("visible");
@@ -282,6 +280,7 @@
                     result.token.id;
                   successElement.classList.add("visible");
                   continueElement.classList.add("visible");
+                  payElement.classList.add("gone");
                 } else if (result.error) {
                   errorElement.textContent = result.error.message;
                   errorElement.classList.add("visible");
