@@ -22,7 +22,6 @@ document.getElementById('mainContent').innerHTML = `
 
 <h2>Please, check if everything is in order.</h2> <br>
 
-<<<<<<< HEAD
 <table style="width:100%">
 <tr>
     <td>I have cleaned the apartment</td>
@@ -42,14 +41,5 @@ document.getElementById('mainContent').innerHTML = `
 
 </table>
 <button type="button" class="btn btn-primary btn-lg buttonCheckInOutSize bottomright">Proceed </button>
-=======
-<ul>
-<li><input type="checkbox">I have cleaned the apartment</input></li>
-<li><input type="checkbox">I have locked the door</input></li>
-<li><input type="checkbox">I have put the key in the locker</input></li>
-
-</ul>
-
->>>>>>> origin/master
 `;
 }
