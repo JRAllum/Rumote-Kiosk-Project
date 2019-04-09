@@ -14,14 +14,14 @@ body {
 
 .bottomleft {
   position: absolute;
-  bottom: 10px;
-  left: 10px;
+  bottom: 25px;
+  left: 25px;
 }
 
 .bottomright {
   position: absolute;
-  bottom: 10px;
-  right: 10px;
+  bottom: 25px;
+  right: 25px;
 }
 
 .center {

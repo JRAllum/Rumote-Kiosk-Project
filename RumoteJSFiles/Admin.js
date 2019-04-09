@@ -1,11 +1,11 @@
 // Initialize Firebase
 var config = {
-  apiKey: "AIzaSyBhjSrs-IlCKhbLyC0RlYQRcJJuLhR2yI8",
-  authDomain: "rumote-database.firebaseapp.com",
-  databaseURL: "https://rumote-database.firebaseio.com",
-  projectId: "rumote-database",
-  storageBucket: "rumote-database.appspot.com",
-  messagingSenderId: "1048806146785"
+    apiKey: "AIzaSyB10cidgp03S-uRO_Fg7Qm-CARjYUaxYLo",
+    authDomain: "rumote-database-7490b.firebaseapp.com",
+    databaseURL: "https://rumote-database-7490b.firebaseio.com",
+    projectId: "rumote-database-7490b",
+    storageBucket: "",
+    messagingSenderId: "209243377839"
 };
 firebase.initializeApp(config);
 
@@ -24,11 +24,29 @@ function submitForm(event) {
     var bookingnummer = getInputVal('bookingnummer');
     var datoFra = getInputVal('fra');
     var datoTil = getInputVal('til');
-    var cleaning = getInputVal('cleaning');
-    var bedLinen = getInputVal('bedlinen');
+
+    var cleaning = document.getElementById('cleaning');
+    var bedLinen = document.getElementById('bedlinen');
+
+    if (cleaning.checked == true) {
+        var cleaning = true;
+    }
+    else {
+        var cleaning = false;
+    }
+
+    if (bedLinen.checked == true) {
+        var bedLinen = true;
+    }
+    else {
+        var bedLinen = false;
+    }
 
     //save user
-    saveUser(name,bookingnummer,datoFra,datoTil,cleaning,bedLinen);
+    saveUser(name, bookingnummer, datoFra, datoTil, cleaning, bedLinen);
+
+    // Clear form
+    document.getElementById('userForm').reset();
 }
 
 // function to get form values
@@ -37,14 +55,14 @@ function getInputVal(id) {
 }
 
 //Save user to firebase
-function saveUser(name,bookingnummer,datoFra,datoTil,cleaning,bedLinen) {
+function saveUser(name, bookingnummer, datoFra, datoTil, cleaning, bedLinen) {
     var newUserRef = userRef.push();
     newUserRef.set({
-        name:name,
-        bookingnummer:bookingnummer,
-        datoFra:datoFra,
-        datoTil:datoTil,
-        cleaning:cleaning,
-        bedLinen:bedLinen
+        name: name,
+        bookingnummer: bookingnummer,
+        datoFra: datoFra,
+        datoTil: datoTil,
+        cleaning: cleaning,
+        bedLinen: bedLinen
     });
 }

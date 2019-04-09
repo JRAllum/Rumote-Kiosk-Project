@@ -1,68 +1,86 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-    <title>Admin</title>
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"/>
 
-    <link rel="stylesheet" href="rumoteCustomizedCSS.css"/>
-    <style>
-      form {
-        width: 100%;
-      }
-    </style>
-   
-  </head>
-  <body>
-      <div class="wrapper">
-          <div class="box header"></div>
-          <div class="box content">
-            <div id ="mainContent" class="center" >
-                <div id="admin">
-                    <form id="userForm">
-                      <p>
-                        <label>Name</label>
-                        <input type="text" name="name" id="name">
-                      </p>
-                      <p>
-                        <label>Bookingnummer</label>
-                        <input type="number" name="bookingnummer" id="bookingnummer">
-                      </p>
-                      <p>
-                        <label>Dato</label>
-                        Fra <input type="date" name="dato" id="fra">
-                        Til <input type="date" name="dato" id="til">
-                      </p>
-                      <p>
-                        <label>Cleaning</label>
-                        <input type="radio" name="cleaning" value=false id="cleaning" checked> Self cleaning<br>
-                        <input type="radio" name="cleaning" value=true id="cleaning"> Order cleaning
-                      </p>
-                      <p>
-                        <label>Bedlinen</label>
-                        <input type="radio" name="bedlinen" value=false id="bedlinen" checked> Bring their own<br>
-                        <input type="radio" name="bedlinen" value=true id="bedlinen"> Order bedlinen
-                      </p>
-                      <p>
-                        <button style="float:right" type="submit">Submit</button>
-                      </p>
-                    </form>
-                </div>
-            </div>
-          </div>
-          <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase.js"></script>
-          <script src=RumoteJSFiles/Admin.js></script>
-          <script>
-          </script>
-          <div class="box footer"></div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Admin</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="rumoteCustomizedCSS.css" />
+  <link rel="stylesheet" href="CustomCheckbox.css" />
+  <style>
+    .admin input {
+      width: 90%;
+      padding: 1em;
+      border: 1px solid #c9e6ff;
+    }
+
+    .admin form {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .admin form p {
+      margin: 5px;
+    }
+
+    .admin form label {
+      margin: 5px;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="box header"></div>
+    <div class="box content">
+      <div id="mainContent" class="center">
+        <div class="admin">
+          <form id="userForm">
+            <p>
+              <label>Name</label>
+              <input type="text" name="name" id="name" required>
+            </p>
+            <p>
+              <label>Bookingnummer</label>
+              <input type="number" name="bookingnummer" id="bookingnummer" required>
+            </p>
+            <p>
+              <label>Fra</label>
+              <input type="date" name="dato" id="fra" required>
+            </p>
+            <p>
+              <label>Til</label>
+              <input type="date" name="dato" id="til" required>
+            </p>
+            <p>
+              <label class="container">Order cleaning
+              <input type="checkbox" name="cleaning" id="cleaning">
+              <span class="checkmark"></span>
+            </label>
+            </p>
+            <p>
+              <label class="container">Order bedlinen
+              <input type="checkbox" name="bedlinen" id="bedlinen">
+              <span class="checkmark"></span>
+            </label>
+            </p>
+            <p>
+              <button type="submit" class="btn btn-primary bottomright">Submit</button>
+            </p>
+          </form>
+        </div>
       </div>
-  </body>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase.js"></script>
+    <script src=RumoteJSFiles/Admin.js> </script> 
+    <div class="box footer"></div>
+  </div>
+</body>
+
 </html>
-
-
