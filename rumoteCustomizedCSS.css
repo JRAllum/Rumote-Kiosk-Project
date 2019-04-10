@@ -75,6 +75,10 @@ div {
 }
 
 /* Jans forandringer */
+#side4 {
+  align-content: center;
+  text-align: center;
+}
 
 h2 {
   text-align: center;

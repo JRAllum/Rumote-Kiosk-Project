@@ -1,55 +1,27 @@
 function page11() {
-    document.getElementById("mainContent").innerHTML = `
-    <div id="side11"></div>
-    <h2>Please, confirm your order.</h2>
-    <table>
-      <tr>
-        <td>Four bedroom apartments:</td>
+    document.getElementById('mainContent').innerHTML = `
+    
+    
+    <h2>Please, check if everything is in order.</h2> <br>
+    
+    <table style="width:100%">
+    <tr>
+        <td>I have cleaned the apartment</td>
         <td></td>
-        <td></td>
-        <td>1000kr</td>
+        <td><input type="checkbox"></td>
       </tr>
       <tr>
-        <td>torsdag, 07.03. - fredag, 08.03</td>
+        <td> I have locked the door</td>
         <td></td>
-        <td></td>
-        <td></td>
+        <td><input type="checkbox"></td>
       </tr>
       <tr>
-        <td>Bed linen 4 sets</td>
+        <td> I have put the key in the locker</td>
         <td></td>
-        <td></td>
-        <td>1000kr</td>
+        <td><input type="checkbox"></td>
       </tr>
-      <tr>
-        <td>cleaning</td>
-        <td></td>
-        <td></td>
-        <td>1000kr</td>
-      </tr>
-
-      <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td>----------</td>
-      </tr>
-      
-
-
-      <tr>
-        <td></td>
-        <td></td>
-        <td>Total sum:</td>
-        <td>3000kr</td>
-      </tr>
-
-
+    
     </table>
-
-    <div class="text-center">
-      <button type="button" class="btn btn-primary bottomright">Primary</button>
-    </div>
-
-  </div>`;
+    <button type="button" class="btn btn-primary btn-lg buttonCheckInOutSize bottomright">Proceed </button>
+    `;
 }
