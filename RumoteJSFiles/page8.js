@@ -1,4 +1,4 @@
-function page10() {
+function page8() {
 	document.getElementById('mainContent').innerHTML = `
                 <div id="side10">
 
@@ -16,7 +16,7 @@ function page10() {
   <textarea style="margin-top:5px;" class="form-control" rows="3" id="comment"
     placeholder="Enter your review"></textarea>
 
-  <button onclick="result()" type="button" style="margin-top:10px;margin-left:5px;"
+  <button onclick="page9()" type="button" style="margin-top:10px;margin-left:5px;"
     class="btn btn-lg btn-success">Submit</button>
   
             </div>

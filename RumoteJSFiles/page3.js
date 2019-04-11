@@ -1,4 +1,4 @@
-function fetchFakeGuest(){
+function page3(){
     var message;
     var guest = document.getElementById("bookingNumber").value;
 
@@ -20,8 +20,8 @@ function fetchFakeGuest(){
     ` <center>${message}</center>
     
     
-    <button type="button" class="btn btn-primary btn-lg buttonCheckInOutSize bottomright">Proceed </button>
-    <button type="button" class="btn btn-primary btn-lg buttonCheckInOutSize bottomleft">Go back </button>
+    <button onclick="page4()" type="button" class="btn btn-primary btn-lg buttonCheckInOutSize bottomright">Proceed </button>
+    <button onclick="page2()" type="button" class="btn btn-primary btn-lg buttonCheckInOutSize bottomleft">Go back </button>
 
     `
 }

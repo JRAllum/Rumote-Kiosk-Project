@@ -22,6 +22,6 @@ function page11() {
       </tr>
     
     </table>
-    <button type="button" class="btn btn-primary btn-lg buttonCheckInOutSize bottomright">Proceed </button>
+    <button onclick="page8()" type="button" class="btn btn-primary btn-lg buttonCheckInOutSize bottomright">Proceed </button>
     `;
 }

@@ -7,8 +7,8 @@ function page4() {
         <br>
         cleaning costs 1000kr.</p>
     <div>
-        <button type="button" class="btn btn-primary bottomright">Order cleaning</button>
-        <button type="button" class="btn btn-secondary bottomleft">I will clean myself</button>
+        <button onclick="page6()" type="button" class="btn btn-primary bottomright">Order cleaning</button>
+        <button onclick="page5()" type="button" class="btn btn-secondary bottomleft">I will clean myself</button>
     </div>
 </div>`
 }
