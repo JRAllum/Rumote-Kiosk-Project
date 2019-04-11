@@ -8,7 +8,7 @@ function page7() {
                 <form class="tlf-inline">
                     <input class="tlf" type="number"><button type="button" class="btn btn-info submit">OK</button>
                 </form>
-                <button type="button" class="btn btn-primary bottomright">Continue</button>
+                <button onclick="page12()" type="button" class="btn btn-primary bottomright">Continue</button>
 
           </div>
           `;

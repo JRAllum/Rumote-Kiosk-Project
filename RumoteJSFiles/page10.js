@@ -1,5 +1,6 @@
 function page11() {
     document.getElementById("mainContent").innerHTML = `
+    <div id="side11"></div>
     <h2>Please, confirm your order.</h2>
     <table>
       <tr>
@@ -15,20 +16,39 @@ function page11() {
         <td></td>
       </tr>
       <tr>
-        <td> I have locked the door</td>
+        <td>Bed linen 4 sets</td>
         <td></td>
-        <td><input type="checkbox"></td>
+        <td></td>
+        <td>1000kr</td>
       </tr>
       <tr>
-        <td> I have put the key in the locker</td>
+        <td>cleaning</td>
         <td></td>
-        <td><input type="checkbox"></td>
+        <td></td>
+        <td>1000kr</td>
       </tr>
-    
+
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>----------</td>
+      </tr>
+      
+
+
+      <tr>
+        <td></td>
+        <td></td>
+        <td>Total sum:</td>
+        <td>3000kr</td>
+      </tr>
+
+
     </table>
 
     <div class="text-center">
-      <button onclick="page6()" type="button" class="btn btn-primary bottomright">Proceed</button>
+      <button onclick="page6()" type="button" class="btn btn-primary bottomright">Primary</button>
     </div>
 
   </div>`;

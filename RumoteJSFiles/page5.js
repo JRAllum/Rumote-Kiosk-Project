@@ -9,8 +9,8 @@ function page5() {
                 <li>Vacuum the sofa and floor everywhere including bathrooms.</li>
             </ul>
             <p>If you do not order the cleaning and the appartment is left unclean we may charge up to 1200 kr.</p>
-            <button type="button" class="btn btn-primary btn-sm bottomright">Continue</button>
-            <button type="button" class="btn btn-secondary btn-sm bottomleft">Back</button>
+            <button onclick="page10()" type="button" class="btn btn-primary btn-sm bottomright">Continue</button>
+            <button onclick="page4()" type="button" class="btn btn-secondary btn-sm bottomleft">Back</button>
         </div>
         `;
 }

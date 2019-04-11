@@ -39,7 +39,7 @@ function page6() {
               </div>
             </form>
             <div class="continue">
-              <button type="button" class="btn btn-primary btn-sm bottomright">
+              <button onclick="page7()" type="button" class="btn btn-primary btn-sm bottomright">
                 Continue
               </button>
             </div>
