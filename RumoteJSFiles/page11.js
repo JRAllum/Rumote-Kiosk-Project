@@ -1,6 +1,5 @@
 function page11() {
     document.getElementById("mainContent").innerHTML = `
-    <div id="side11"></div>
     <h2>Please, confirm your order.</h2>
     <table>
       <tr>
@@ -48,7 +47,7 @@ function page11() {
     </table>
 
     <div class="text-center">
-      <button type="button" class="btn btn-primary bottomright">Primary</button>
+      <button onclick="page6()" type="button" class="btn btn-primary bottomright">Proceed</button>
     </div>
 
   </div>`;
