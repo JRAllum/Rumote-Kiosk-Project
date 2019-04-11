@@ -1,6 +1,6 @@
-function page11() {
+function page10() {
     document.getElementById("mainContent").innerHTML = `
-    <div id="side11"></div>
+    <div id="side10"></div>
     <h2>Please, confirm your order.</h2>
     <table>
       <tr>

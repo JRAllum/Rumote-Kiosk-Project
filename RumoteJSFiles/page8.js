@@ -1,6 +1,6 @@
 function page8() {
 	document.getElementById('mainContent').innerHTML = `
-                <div id="side10">
+                <div id="side8">
 
   <span onmouseover="starmark(this)" onclick="starmark(this)" id="1one" style="font-size:40px;cursor:pointer;"
     class="fa fa-star checked"></span>
