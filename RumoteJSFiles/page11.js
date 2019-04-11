@@ -1,14 +1,18 @@
 function page11() {
-    document.getElementById('mainContent').innerHTML = `
-    
-    
-    <h2>Please, check if everything is in order.</h2> <br>
-    
-    <table style="width:100%">
-    <tr>
-        <td>I have cleaned the apartment</td>
+    document.getElementById("mainContent").innerHTML = `
+    <h2>Please, confirm your order.</h2>
+    <table>
+      <tr>
+        <td>Four bedroom apartments:</td>
         <td></td>
-        <td><input type="checkbox"></td>
+        <td></td>
+        <td>1000kr</td>
+      </tr>
+      <tr>
+        <td>torsdag, 07.03. - fredag, 08.03</td>
+        <td></td>
+        <td></td>
+        <td></td>
       </tr>
       <tr>
         <td> I have locked the door</td>
@@ -22,6 +26,10 @@ function page11() {
       </tr>
     
     </table>
-    <button onclick="page8()" type="button" class="btn btn-primary btn-lg buttonCheckInOutSize bottomright">Proceed </button>
-    `;
+
+    <div class="text-center">
+      <button onclick="page6()" type="button" class="btn btn-primary bottomright">Proceed</button>
+    </div>
+
+  </div>`;
 }
