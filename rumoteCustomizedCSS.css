@@ -1,16 +1,69 @@
 body {
-  margin: 40px;
+  
+  font-family: 'Roboto', sans-serif;
+  color: rgb(47, 45, 49);
 }
 
-.content {
-  height: 50vh;
-  grid-area: content;
-  position: relative;
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; 
 }
+
+@media (min-width: 768px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr;
+    grid-template-rows: auto 0.8fr auto;
+  }
+ 
+}
+
+header {
+  grid-column: span 3;
+  padding: 40px;
+  text-align: center;
+  font-size: 1.4em;
+  background-color:#ff5960;
+   
+}
+
+main {
+  flex: 15;
+  padding-top: 150px; 
+  box-shadow: 4px 6px 7px 4px rgba(0,0,0,0.32);
+  margin-top: 40px;
+  margin-bottom: 40px;
+  background-color: white;
+ 
+}
+
+nav {
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+}
+ 
+aside {
+  padding: 0;
+  background-color: white;
+}
+
+footer {
+  grid-column: span 3;
+  padding: 40px;
+  text-align: center;
+  font-size: 1.4em;
+  background-color: #008489;
+}
+
+
 
 .buttonCheckInOutSize {
   width: 170px;
+  margin-left:auto; 
+  margin-right:auto; 
 }
+
 
 .bottomleft {
   position: absolute;
@@ -24,50 +77,22 @@ body {
   right: 25px;
 }
 
-.center {
-  margin: auto;
-  width: auto;
+.btns {
+   width: 170px;
+  height: 70px;
+  box-shadow:  6px 15px 6px 4px rgba(0,0,0,0.32);
+}
+.btnColor{
+  background-color: #008489;
+
+}
+/* Centers everything within all divs */
+div{
+  text-align:center;
 }
 
 .stars {
   color: #ffe600;
-}
-
-.header {
-  grid-area: header;
-}
-
-.footer {
-  grid-area: footer;
-}
-
-.wrapper {
-  display: grid;
-  grid-gap: 15px;
-  grid-template-rows: 1fr 6fr 1fr;
-  grid-template-areas: "header header header" "content content content" "footer footer footer";
-  background-color: rgb(241, 241, 247);
-  color: rgb(37, 35, 41);
-}
-
-.box {
-  height: auto;
-  display: grid;
-  background-color: #fff;
-  color: rgb(37, 35, 41);
-  border-radius: 5px;
-  padding: 50px;
-  font-size: 150%;
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-}
-
-.header {
-  height: 1fr;
-  background-color: rgb(255, 89, 96);
-}
-
-.footer {
-  background-color: rgb(0, 132, 137);
 }
 
 div {
@@ -114,7 +139,7 @@ ul {
 
 /* Checkout form  */
 * {
-  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-family: "Roboto",  sans-serif;
   font-size: 19px;
   font-variant: normal;
   padding: 0;
@@ -172,7 +197,6 @@ label .field.is-focused + span {
   background: transparent;
   font-weight: 300;
   border: 0;
-  color: black;
   outline: none;
   cursor: text;
   display: block;
@@ -264,3 +288,6 @@ label .field.is-focused + span {
   position: relative;
   left: 10px;
 }
+
+  
+  
