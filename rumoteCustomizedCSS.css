@@ -24,7 +24,7 @@ header {
   padding: 40px;
   text-align: center;
   font-size: 1.4em;
-  background-color:#ff5960;
+  background-image: url(sky.png);
    
 }
 
@@ -34,9 +34,9 @@ main {
   box-shadow: 4px 6px 7px 4px rgba(0,0,0,0.32);
   margin-top: 40px;
   margin-bottom: 40px;
-  background-color: white;
- 
+  background-color: white; 
 }
+
 
 nav {
   background-color: rgb(255, 255, 255);
@@ -53,34 +53,33 @@ footer {
   padding: 40px;
   text-align: center;
   font-size: 1.4em;
-  background-color: #008489;
+  background-color: #839595;
 }
-
-
-
-.buttonCheckInOutSize {
-  width: 170px;
-  margin-left:auto; 
-  margin-right:auto; 
-}
-
 
 .bottomleft {
   position: absolute;
-  bottom: 25px;
-  left: 25px;
+  bottom:60px ;
+  left: 65px;
+  width: 170px;
+  height:60px;
+  box-shadow:  3px 2px 9px 2px rgba(0,0,0,0.32);
+  
 }
 
 .bottomright {
   position: absolute;
-  bottom: 25px;
-  right: 25px;
+  bottom: 60px;
+  right: 65px;
+  width: 170px;
+  height: 60px; 
+  box-shadow:  3px 2px 9px 2px rgba(0,0,0,0.32);
+
 }
 
 .btns {
    width: 170px;
   height: 70px;
-  box-shadow:  6px 15px 6px 4px rgba(0,0,0,0.32);
+  box-shadow:  3px 3px 6px 2px rgba(0,0,0,0.32);
 }
 .btnColor{
   background-color: #008489;
@@ -89,15 +88,14 @@ footer {
 /* Centers everything within all divs */
 div{
   text-align:center;
+  font-size: 30px;
+  
 }
 
 .stars {
   color: #ffe600;
 }
 
-div {
-  color: rgb(63, 63, 65);
-}
 
 /* Jans forandringer */
 #side4 {
