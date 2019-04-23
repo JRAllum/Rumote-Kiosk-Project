@@ -49,7 +49,7 @@ body{
     background-color:#38443ca0;
     margin:auto;
     top: 80px;
-    padding-top: 90px;
+    padding-top: 60px;
     position: relative;
     border-radius: 5px;
    
@@ -103,7 +103,9 @@ table{
   width:230px;
   height:45px;
 }
-
+.inputSmall{
+  width: 160px;
+}
 .submitBtn{
   width:70px;
   height: 70px;
@@ -130,6 +132,7 @@ table{
    margin-bottom: 0;
    margin-top:10;
    text-align: left;
+   padding:30px;
  }
 
 
@@ -141,10 +144,10 @@ table{
 @media (max-width: 768px) {
   .header-content {
       position: relative;
-      top:100px; 
+      top:50px; 
       bottom:300px;
       width: 95%;
-      height:500px;  
+      height:700px;  
   } 
 }
 
@@ -204,6 +207,7 @@ ul {
 
 form {
   width: 400px;
+  margin-left: 100px;
 }
 
 label {
