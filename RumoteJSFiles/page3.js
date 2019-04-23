@@ -13,15 +13,16 @@ function page3(){
         message = "John Smith, you have booked the appartment with 3 bedrooms to., 15.08 - fr., 18.08.";
         break;
         default:
-        message = "Oops, it looks like something went wrong. Please, check your booking number.";
+        message1 = "It looks like something went wrong";
+        message2= "Please, check your booking number"
     }
     document.getElementById("mainContent").innerHTML =
     
-    ` <div>${message}</div>
+    ` <p>${message1}</p>
+    <h2>${message2}</h2>
     
-    <button onclick="page2()" type="button" class="btn btn-primary btn-lg  bottomleft">Back</button>
-    <button onclick="page4()" type="button" class="btn btn-primary btn-lg  bottomright">Proceed </button>
- 
+    <button onclick="page2()" type="button" class="btn" "">BACK</button>
+    <button onclick="page4()" type="button" class="btn">PROCEED </button>
 
     `
 }
