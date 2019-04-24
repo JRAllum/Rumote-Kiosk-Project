@@ -2,13 +2,7 @@ function page6() {
   document.getElementById("mainContent").innerHTML = `
     <div class="page6">
             <div class="info">
-              <h2>
-                Card number for testing purposes is:<br />
-                4242 4242 4242 4242.<br />
-                Everything else is random.
-              </h2>
             </div>
-            <script src="https://js.stripe.com/v3/"></script>
             <form>
               <label>
                 <input
@@ -24,7 +18,7 @@ function page6() {
                   type="tel"
                   placeholder="xx xxx xxx"
                 />
-              
+                <span><span>Phone number</span></span>
               </label>
               <label>
                 <div id="card-element" class="field is-empty"></div>
@@ -33,7 +27,9 @@ function page6() {
               <button class="pay" type="submit">Pay $25</button>
               <div class="outcome">
                 <div class="error" role="alert"></div>
-                
+                <div class="success">
+                  Success! Your Stripe token is <span class="token"></span>
+                </div>
               </div>
             </form>
             <div class="continue">
@@ -41,8 +37,9 @@ function page6() {
                 Continue
               </button>
             </div>
+            </div>`;
 
-            <script>
+
               var stripe = Stripe("pk_test_c1AMZEnN0unLBDXAr9nFo7xG00p6gwDTuQ");
               var elements = stripe.elements();
 
@@ -70,7 +67,7 @@ function page6() {
                   focus: "is-focused",
                   empty: "is-empty"
                 }
-              });
+                });
               card.mount("#card-element");
 
               var inputs = document.querySelectorAll("input.field");
@@ -128,6 +125,5 @@ function page6() {
                   };
                   stripe.createToken(card, extraDetails).then(setOutcome);
                 });
-            </script>
-          </div>`;
+          
 }
