@@ -1,6 +1,6 @@
 function page6() {
   document.getElementById("mainContent").innerHTML = `
-    <div class="page6">
+    <div id="page6">
             <div class="info">
             </div>
             <form>
@@ -33,8 +33,8 @@ function page6() {
               </div>
             </form>
             <div class="continue">
-              <button onclick="page7()" type="button" class="btn btn-primary btn-sm bottomright">
-                Continue
+              <button onclick="page7()" type="button" class="btn ">
+                PROCEED
               </button>
             </div>
             </div>`;
@@ -51,7 +51,7 @@ function page6() {
                     color: "black",
                     lineHeight: "36px",
                     fontWeight: 300,
-                    fontFamily: '"Helvetica Neue", Helvetica, sans-serif',
+                    fontFamily: '"Roboto",  sans-serif',
                     fontSize: "19px",
 
                     "::placeholder": {

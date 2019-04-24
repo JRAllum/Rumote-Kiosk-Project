@@ -48,16 +48,14 @@ body{
     height: 520px;
     background-color:#38443ca0;
     margin:0 auto;
-    top: 80px;
-    padding-top: 60px;
+    padding-top: 3rem;
     position: relative;
     border-radius: 5px;
    
-  
 }
 
 .header-content h1{
-  font-size:50px;
+  font-size:35px;
   margin-bottom:0;
     
 }
@@ -68,6 +66,7 @@ body{
   padding-bottom: 1rem;
   padding-left: 7rem;
   padding-right: 7rem;
+  padding-top: 3rem;
   
 }
 
@@ -89,6 +88,7 @@ body{
 }
 .btn:hover{
   background-color: #285146;
+  margin: 0;
 }
 
 .lgIcon{
@@ -96,10 +96,7 @@ body{
   height:20px;
 }
 
-table{
-  font-size: 1.2em;
-  text-align: right;
-}
+
 
 
 .inputForm {
@@ -113,16 +110,16 @@ table{
   width:70px;
   height: 70px;
   border-radius: 50px;
-  background-color: rgb(231, 90, 68);
+  background-color: rgb(234, 95, 73);
   border:none;
   margin:10px;
   color:white;
   font-size: 20px;
-  box-shadow:  2px 5px 10px 3px rgba(0,0,0,0.57);
+  box-shadow:  2px 5px 10px 3px rgba(43, 41, 45, 0.518);
 }
 
 .submitBtn:hover{
-  background-color:rgb(204, 61, 32);
+  background-color:rgb(220, 58, 26);
 }
 .small{
   width:50px;
@@ -130,29 +127,77 @@ table{
   box-shadow: none
 }
  ul{
-   
    text-align: left;
-   padding:30px; 
+   padding-left:12rem;
+  margin:0
+  auto;
+  width:800px; 
  }
 
 li{
-  font-size: 20px;
+  font-size: 25px;
   padding:5px;
+}
+table{
+  margin:0 auto;
+  width: 300px;
+  font-size: 1.9em;
+  text-align: right;
+}
+td{
+  padding:10px;
+}
+
+  
+.fa-home{
+  color:rgba(124, 168, 183, 0.483)
 }
 .fa-circle{
-  color:rgba(136, 203, 177, 0.488);
-  padding:5px;
+  color:rgba(234, 122, 112, 0.488);
+  padding:7px;
 }
-.page6{
-  width:500px;
+#page1{
+  margin:0
+  auto;
+padding-top: 4rem}
+
+#page2{
+  margin:0
+  auto;
+padding-top: 5rem;}
+
+#page3{
+  margin:0
+  auto;
+padding-top: 3rem;}
+
+
+#page4{
   margin:0
   auto;
 }
+
+#page5{
+  margin:0
+  auto;}
+
+  
+#page6{
+width:600px;
+ margin:0
+  auto;
+}
+#page10{
+  margin:0
+   auto;
+ }
 #page11{
   font-size: 40px;
-  width:500px;
   margin:0
   auto;
+}
+.important{
+  color: rgb(232, 107, 107);
 }
 @media(max-width:960px){
   .container{
@@ -162,12 +207,16 @@ li{
 }
 @media (max-width: 768px) {
   .header-content {
-      position: relative;
-      top:50px; 
-      bottom:300px;
-      width: 95%;
-      height:700px;  
+      position:relative;
+      margin:0
+      auto; 
+      height: 600px; 
   } 
+  ul{
+    width:500px;
+    padding-left:4rem;
+  margin:0 auto;}
+  
 }
 
 
@@ -175,16 +224,19 @@ li{
 .stars {
   color: #ffe600;
 }
-
+.textInput{
+  width:90%;
+  height:270px;
+  margin:0 auto;
+  background-color: #f0f3ea
+}
 
 /* Jans forandringer */
-#side4 {
-  align-content: center;
-  text-align: center;
-}
+
 
 h2 {
   text-align: center;
+  font-size: 20px;
 }
 h3 {
   text-align: center;
@@ -355,7 +407,7 @@ label .field.is-focused + span {
 }
 
 .success {
-  color: #34d08c;
+  color: #66d5a5;
 }
 
 .success .token {

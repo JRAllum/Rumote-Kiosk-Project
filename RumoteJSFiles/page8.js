@@ -1,7 +1,7 @@
 function page8() {
 	document.getElementById('mainContent').innerHTML = `
-               
-
+      <div id="page8">         
+<p>Please, rate us.</p> <br>
   <span onmouseover="starmark(this)" onclick="starmark(this)" id="1one" style="font-size:40px;cursor:pointer;"
     class="fa fa-star checked"></span>
   <span onmouseover="starmark(this)" onclick="starmark(this)" id="2one" style="font-size:40px;cursor:pointer;"
@@ -12,16 +12,14 @@ function page8() {
     class="fa fa-star"></span>
   <span onmouseover="starmark(this)" onclick="starmark(this)" id="5one" style="font-size:40px;cursor:pointer;"
     class="fa fa-star"></span>
-  <br />
-  <textarea style="margin-top:5px;" class="form-control" rows="3" id="comment"
-    placeholder="Enter your review"></textarea>
-
-  <button onclick="page9()" type="button" style="margin-top:10px;margin-left:5px;"
-    class="btn btn-lg btn-success">Submit</button>
+  <br><br>
   
-            
-            `;
-}
+  <button onclick="page9()" type="button" style="margin-top:10px;margin-left:5px;"
+    class="btn">SUBMIT</button>
+  
+        </div>    
+            `;}
+
 // Function for starrating
 	  var count;
 	  function starmark(item) {
@@ -40,5 +38,6 @@ function page8() {
 // Alert popup with rating score
 	function result() {
 	alert('Rating : ' + count + '\nReview : ' + document.getElementById('comment').value);
-	}
+  }
+
 
