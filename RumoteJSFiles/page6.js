@@ -2,11 +2,6 @@ function page6() {
   document.getElementById("mainContent").innerHTML = `
     <div class="page6">
             <div class="info">
-              <p>
-                Card number for testing purposes is:<br />
-                4242 4242 4242 4242.<br />
-                Everything else is random.
-              </p>
             </div>
             <form>
               <label>
