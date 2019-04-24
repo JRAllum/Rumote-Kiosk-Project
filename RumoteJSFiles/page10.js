@@ -1,6 +1,6 @@
 function page10() {
     document.getElementById("mainContent").innerHTML = `
-    <div id="side10"></div>
+    <div id="page10"></div>
     
     <h1>Your order</h1>
     <ul>
