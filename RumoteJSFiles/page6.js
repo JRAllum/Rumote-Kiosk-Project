@@ -8,7 +8,6 @@ function page6() {
                 Everything else is random.
               </p>
             </div>
-            <script src="https://js.stripe.com/v3/"></script>
             <form>
               <label>
                 <input
