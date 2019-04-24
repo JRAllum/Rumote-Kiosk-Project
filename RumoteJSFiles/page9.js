@@ -3,7 +3,7 @@ function page9() {
               <div id="side9">
                   <h2>How can we improve?</h2>
                   <textarea class="page9Text" type="text"></textarea>
-                  <button type="button" class="btn btn-primary btn-sm bottomright">Continue</button>
+                  <button type="button" class="submitBtn ">Done</button>
               </div>
     `;
 }

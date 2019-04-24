@@ -1,6 +1,6 @@
 function page8() {
 	document.getElementById('mainContent').innerHTML = `
-                <div id="side8">
+               
 
   <span onmouseover="starmark(this)" onclick="starmark(this)" id="1one" style="font-size:40px;cursor:pointer;"
     class="fa fa-star checked"></span>
@@ -19,7 +19,7 @@ function page8() {
   <button onclick="page9()" type="button" style="margin-top:10px;margin-left:5px;"
     class="btn btn-lg btn-success">Submit</button>
   
-            </div>
+            
             `;
 }
 // Function for starrating

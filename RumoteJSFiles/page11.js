@@ -1,21 +1,14 @@
 function page11() {
     document.getElementById("mainContent").innerHTML = `
+    <p>Make sure that you</p>
+    <ul>
+        <li> Have cleaned the appartment </li>
+        <li> Have locked the door</li>
+        <li> Have put the key in the locker</li>
     
-        <td> I have locked the door</td>
-        <td></td>
-        <td><input type="checkbox"></td>
-      </tr>
-      <tr>
-        <td> I have put the key in the locker</td>
-        <td></td>
-        <td><input type="checkbox"></td>
-      </tr>
+</ul>
     
-    </table>
-
-    <div class="text-center">
-      <button onclick="page6()" type="button" class="btn btn-primary bottomright">Proceed</button>
-    </div>
-
-  </div>`;
+      <button onclick="page8()" type="button" class="btn">Proceed</button>
+    
+  `;
 }
