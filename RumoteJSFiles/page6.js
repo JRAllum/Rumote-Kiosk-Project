@@ -8,7 +8,6 @@ function page6() {
                 Everything else is random.
               </h2>
             </div>
-            <script src="https://js.stripe.com/v3/"></script>
             <form>
               <label>
                 <input
@@ -41,8 +40,9 @@ function page6() {
                 Continue
               </button>
             </div>
+            </div>`;
 
-            <script>
+
               var stripe = Stripe("pk_test_c1AMZEnN0unLBDXAr9nFo7xG00p6gwDTuQ");
               var elements = stripe.elements();
 
@@ -70,7 +70,7 @@ function page6() {
                   focus: "is-focused",
                   empty: "is-empty"
                 }
-              });
+                });
               card.mount("#card-element");
 
               var inputs = document.querySelectorAll("input.field");
@@ -128,6 +128,5 @@ function page6() {
                   };
                   stripe.createToken(card, extraDetails).then(setOutcome);
                 });
-            </script>
-          </div>`;
+          
 }
