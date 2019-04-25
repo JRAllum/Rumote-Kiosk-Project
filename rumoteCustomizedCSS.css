@@ -45,7 +45,7 @@ body{
 .header-content{
   z-index:2;
   width: 920px;
-    height: 520px;
+    height: 610px;
     background-color:#38443ca0;
     margin:0 auto;
     padding-top: 3rem;
@@ -71,7 +71,7 @@ body{
 }
 
 .btn{
-  background:#34b3a0;
+  background:#376a5c;
   color:#fff;
   font-size: 1.2rem;
   padding:1rem 2rem;
@@ -87,16 +87,14 @@ body{
   width: 340px;
 }
 .btn:hover{
-  background-color: #285146;
-  margin: 0;
+  background-color:#34b3a0;
+
 }
 
 .lgIcon{
   width:20px;
   height:20px;
 }
-
-
 
 
 .inputForm {
@@ -119,7 +117,7 @@ body{
 }
 
 .submitBtn:hover{
-  background-color:rgb(220, 58, 26);
+  background-color:rgb(233, 43, 43);
 }
 .small{
   width:50px;
@@ -147,14 +145,20 @@ table{
 td{
   padding:10px;
 }
-
+.fa-trash-alt{
+  padding:9px;
+}
   
 .fa-home{
   color:rgba(124, 168, 183, 0.483)
 }
 .fa-circle{
-  color:rgba(234, 122, 112, 0.488);
+  color:rgba(50, 128, 102, 0.488);
   padding:7px;
+}
+
+.fa-circle:hover{
+  color: #66d5a5;
 }
 #page1{
   margin:0
@@ -186,6 +190,10 @@ padding-top: 3rem;}
 width:600px;
  margin:0
   auto;
+  padding-top: 4rem;
+}
+#page6 h1{
+  color:rgb(238, 238, 249);
 }
 #page10{
   margin:0
@@ -195,6 +203,10 @@ width:600px;
   font-size: 40px;
   margin:0
   auto;
+}
+#masterlock{
+  
+  margin: 0 auto;
 }
 .important{
   color: rgb(232, 107, 107);

@@ -1,6 +1,7 @@
 function page6() {
   document.getElementById("mainContent").innerHTML = `
     <div id="page6">
+    <h1><i class="fab fa-cc-stripe fa-1x"></i> You may pay now </h1> 
             <div class="info">
             </div>
             <form>

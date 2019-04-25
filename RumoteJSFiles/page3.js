@@ -4,15 +4,15 @@ function page3(){
 
     switch(guest) {
         case "1234567":
-         message1 = "John Smith,";
+         message1 = "John Smith";
          message2 ="you have booked the appartment with 3 bedrooms  to., 4.03 - fr., 6.03."
          break;
         case "7654321":
-        message1 = "Ole Norman,  ";
+        message1 = "Ole Norman  ";
         message2 ="you have booked the appartment with 3 bedrooms  mo., 6.06 - fr., 10.07."
         break;
         case "0000000":
-        message1 = "Elin Martinson, .";
+        message1 = "Elin Martinson";
         message2 = "you have booked the appartment with 3 bedrooms to., 15.08 - fr., 18.08"
         break;
         default:

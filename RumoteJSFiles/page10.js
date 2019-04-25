@@ -1,8 +1,7 @@
 function page10() {
     document.getElementById("mainContent").innerHTML = `
     <div id="page10"></div>
-    
-    <p>Your order</p>
+    <h1>Your order</h1> <br>
 <table>
     <tr>
     <td>4-bedroom apartment</td>
@@ -18,7 +17,7 @@ function page10() {
   </tr>
   <td>Total:</td>
    <td>3000 kr</td>
-    
+   
   </tr>
   </table>
     
