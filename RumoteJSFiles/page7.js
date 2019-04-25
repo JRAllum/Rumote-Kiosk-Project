@@ -1,9 +1,9 @@
 function page7() {
   document.getElementById("mainContent").innerHTML = `
               <div id="page7"></div>
-              <p> Almost done! </p>
+              <p> Success! </p>
                 <h2> We have sent the code to the locker via text.</h2> 
-                <h1>+ 47 67236739</h1>
+                <h1>+ 47 67236739</h1> <br>
 
                 <h2>Shall we send the code to  some other number?</h2>
                 <div>

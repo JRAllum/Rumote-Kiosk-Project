@@ -98,7 +98,7 @@ body{
 
 
 .inputForm {
-  width:230px;
+  width:290px;
   height:45px;
 }
 .inputSmall{
@@ -110,10 +110,11 @@ body{
   border-radius: 50px;
   background-color: rgb(234, 95, 73);
   border:none;
-  margin:10px;
+  margin:12px;
   color:white;
   font-size: 20px;
   box-shadow:  2px 5px 10px 3px rgba(43, 41, 45, 0.518);
+ 
 }
 
 .submitBtn:hover{
