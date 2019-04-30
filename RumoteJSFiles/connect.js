@@ -9,18 +9,23 @@ var config = {
 };
 firebase.initializeApp(config);
 
-// Reference user collection
-var db = firebase.database().ref('users');
+// var name;
+// var datoFra;
+// var datoTil;
+// var cleaning;
+// var bedLinen;
 
+// function connect() {
+//     var db = firebase.firestore().collection('users');
+//     var input = document.getElementById("bookingNumber").value;
+//     var docRef = db.doc(input);
+//     docRef.get().then(function (doc) {
+//         console.log(doc.data().name,doc.data().datoFra,doc.data().datoTil)
 
-function connect() {
-    var booknbr = input;
-    return firebase.database().ref('/users/' + booknbr).once('value').then(function(snapshot){
-        var name = (snapshot.val() && snapshot.val().name),
-        var datoFra = (snapshot.val() && snapshot.val().datoFra),
-        var datoTil = (snapshot.val() && snapshot.val().datoTil),
-        var cleaning = (snapshot.val() && snapshot.val().cleaning),
-        var bedlinen = (snapshot.val() && snapshot.val().bedlinen),
-    });
-};
-    
+//         name = doc.data().name;
+//         datoFra = doc.data().datoFra;
+//         datoTil = doc.data().datoTil;
+//         cleaning = doc.data().cleaning;
+//         bedLinen = doc.data().bedLinen;
+//     })
+// };

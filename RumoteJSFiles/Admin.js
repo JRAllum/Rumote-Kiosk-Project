@@ -4,13 +4,13 @@ var config = {
     authDomain: "rumote-database-7490b.firebaseapp.com",
     databaseURL: "https://rumote-database-7490b.firebaseio.com",
     projectId: "rumote-database-7490b",
-    storageBucket: "",
+    storageBucket: "rumote-database-7490b.appspot.com",
     messagingSenderId: "209243377839"
 };
 firebase.initializeApp(config);
 
 // Reference user collection
-var userRef = firebase.database().ref('users');
+var userRef = firebase.firestore().collection('users');
 
 // Listen for form submit
 document.getElementById('userForm').addEventListener('submit', submitForm);
@@ -56,10 +56,9 @@ function getInputVal(id) {
 
 //Save user to firebase
 function saveUser(name, bookingnummer, datoFra, datoTil, cleaning, bedLinen) {
-    var newUserRef = userRef.push();
-    newUserRef.set({
+    var newUserRef = userRef;
+    newUserRef.doc(bookingnummer).set({
         name: name,
-        bookingnummer: bookingnummer,
         datoFra: datoFra,
         datoTil: datoTil,
         cleaning: cleaning,
