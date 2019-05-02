@@ -20,29 +20,32 @@ function page3() {
     //     message1 = "We can't find you.";
     //     message2= "Please, check your booking number";
     // }
-
-
-
     var db = firebase.firestore().collection('users');
     var input = document.getElementById("bookingNumber").value;
     var docRef = db.doc(input);
     docRef.get().then(function (doc) {
-        console.log(doc.data().name, doc.data().datoFra, doc.data().datoTil)
+        console.log(doc.data())
 
-        var name = doc.data().name;
-        var datoFra = doc.data().datoFra;
-        var datoTil = doc.data().datoTil;
-        var cleaning = doc.data().cleaning;
-        var bedLinen = doc.data().bedLinen;
-        
-        document.getElementById("mainContent").innerHTML =
-            ` <p>` + name + `</p>
+        name = doc.data().name;
+        datoFra = doc.data().datoFra;
+        datoTil = doc.data().datoTil;
+        cleaning = doc.data().cleaning;
+        bedLinen = doc.data().bedLinen;
+
+    document.getElementById("mainContent").innerHTML =
+        ` <p>` + name + `</p>
     <h2>you have booked the appartment with 3 bedrooms from ` + datoFra + ` to ` + datoTil + `</h2> <br><br>
     
     <button onclick="page2()" type="button" class="btn" "">BACK</button>
-    <button onclick="page4()" type="button" class="btn">PROCEED </button>
+    <button onclick="cleanOrder()" type="button" class="btn">PROCEED </button>
+    `
+})
 
-    `;
-    });
+};
 
+function cleanOrder() {
+    if (cleaning == true) {
+        page10();
+    }else page4();
 }
+

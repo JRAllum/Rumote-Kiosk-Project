@@ -8,24 +8,3 @@ var config = {
     messagingSenderId: "209243377839"
 };
 firebase.initializeApp(config);
-
-// var name;
-// var datoFra;
-// var datoTil;
-// var cleaning;
-// var bedLinen;
-
-// function connect() {
-//     var db = firebase.firestore().collection('users');
-//     var input = document.getElementById("bookingNumber").value;
-//     var docRef = db.doc(input);
-//     docRef.get().then(function (doc) {
-//         console.log(doc.data().name,doc.data().datoFra,doc.data().datoTil)
-
-//         name = doc.data().name;
-//         datoFra = doc.data().datoFra;
-//         datoTil = doc.data().datoTil;
-//         cleaning = doc.data().cleaning;
-//         bedLinen = doc.data().bedLinen;
-//     })
-// };

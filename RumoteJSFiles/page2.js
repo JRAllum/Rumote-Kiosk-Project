@@ -7,4 +7,5 @@ function page2() {
 </div>
 </div>
     `;
+    
 }
