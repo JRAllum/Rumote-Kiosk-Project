@@ -25,7 +25,7 @@ function page6() {
                 <div id="card-element" class="field is-empty"></div>
                 <span><span>Credit or debit card</span></span>
               </label>
-              <button class="pay" type="submit">Pay $25</button>
+              <button class="pay" type="submit">Pay `+ total +` kr</button>
               <div class="outcome">
                 <div class="error" role="alert"></div>
                 <div class="success">
