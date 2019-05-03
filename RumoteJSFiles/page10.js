@@ -1,7 +1,7 @@
 function page10() {
   var bedPris;
   var cleanPris;
-  
+
   if (bedLinen == true) {
     bedPris = 1000;
   } else {
@@ -16,16 +16,16 @@ function page10() {
 
   if (cleaning == true && bedLinen == true) {
     total = 1000 + bedPris + cleanPris;
-   }
+  }
   else if (cleaning == true && bedLinen == false) {
     total = 1000 + cleanPris;
-   }
+  }
   else if (cleaning == false && bedLinen == true) {
     total = 1000 + bedPris;
-   }
+  }
   else if (cleaning == false && bedLinen == false) {
     total = 1000;
-   }
+  }
 
 
 
@@ -34,12 +34,12 @@ function page10() {
     <h1>Your order</h1> <br>
 <table class="page10">
     <tr>
-    <td>4-bedroom apartment</td>
+    <td>3-bedroom apartment</td>
     <td></td>
     <td>1000 kr</td>
   </tr>
   <tr>
-    <td>bed linen 4 sets</td>
+    <td>bed linen 3 sets</td>
     <td></td>
     <td>`+ bedPris + ` kr</td>
   </tr>
