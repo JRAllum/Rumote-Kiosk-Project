@@ -10,7 +10,6 @@ function page4() {
         <h2>Cleaning costs 1000 kr.</h2> <br>
     
         <button onclick="page5()" type="button" class="btn bg" >I WILL CLEAN MYSELF</button>
-        <button onclick="page10()" type="button" class="btn bg">ORDER CLEANING</button>
-    <button onclick="page7()" type="button" class="btn">fake</button>
+        <button onclick="page10(orderClean())" type="button" class="btn bg">ORDER CLEANING</button>
 </div>`
 }
