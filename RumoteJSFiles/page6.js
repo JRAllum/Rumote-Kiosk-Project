@@ -49,7 +49,7 @@ function page6() {
                 style: {
                   base: {
                     iconColor: "#8898AA",
-                    color: "black",
+                    color: "white",
                     lineHeight: "36px",
                     fontWeight: 300,
                     fontFamily: '"Roboto",  sans-serif',
