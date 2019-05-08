@@ -1,3 +1,11 @@
+function unOrderClean() {
+  cleaning = false;
+}
+
+function orderClean() {
+  cleaning = true;
+}
+
 function page10() {
   var bedPris;
   var cleanPris;
