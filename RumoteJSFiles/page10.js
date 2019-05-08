@@ -1,3 +1,7 @@
+function unOrderClean() {
+  cleaning = false;
+}
+
 function orderClean() {
   cleaning = true;
 }
