@@ -2,7 +2,7 @@ function page1() {
 	document.getElementById('mainContent').innerHTML = `
     
     <div id="page1">
-    <h1> Welcome to Alpin Lodge </h1><br>
+    <h1> Welcome to Alpin Lodge test </h1><br>
     <i class="fas fa-home fa-3x important"></i> <br>
      <br>
     <div>
