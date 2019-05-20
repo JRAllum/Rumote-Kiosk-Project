@@ -12,7 +12,9 @@ function page3() {
 
     document.getElementById("mainContent").innerHTML =
         ` <p>` + name + `</p>
-    <h2>you have booked the appartment with 3 bedrooms from ` + datoFra + ` to ` + datoTil + `</h2> <br><br>
+    <h1>you have booked the appartment</h1>
+    <h1> with 3 bedrooms from</h1>
+    <h1> ` + datoFra + ` to ` + datoTil + `</h1> <br><br>
     
     <button onclick="page2()" type="button" class="btn" "">BACK</button>
     <button onclick="cleanOrder()" type="button" class="btn">PROCEED </button>

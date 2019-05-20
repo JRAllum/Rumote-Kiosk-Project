@@ -12,7 +12,7 @@ body{
 }
 
 .v-header{
-  height:80vh;
+  height:100vh;
   display:flex;
   align-items: center;
   color:#fff;  
@@ -45,10 +45,11 @@ body{
 .header-content{
   z-index:2;
   width: 920px;
-    height: 610px;
-    background-color:#38443ca0;
+    height: 710px;
+    background-color:#324338c8;
     margin:0 auto;
     padding-top: 3rem;
+    
     position: relative;
     border-radius: 5px;
    
@@ -79,17 +80,19 @@ body{
   width: 220px;
   height: 65px;
   font-size: 25px;
-  border:none;
-  margin: 20px
-  
-}
-.bg{
-  width: 340px;
+  border:none; 
+  margin-top:10%;
+  box-shadow: 12px 12px 2px 10px rgba(45, 45, 48, 0.2);
 }
 .btn:hover{
-  background-color:#34b3a0;
-
+  background-color:#4eb6a6;
+  
 }
+
+.bg{
+  width: 330px;
+}
+
 
 .lgIcon{
   width:20px;
@@ -98,27 +101,29 @@ body{
 
 
 .inputForm {
-  width:290px;
+  width:200px;
   height:45px;
+  color:rgb(74, 74, 79);
+  box-shadow:  2px 5px 4px 2px rgba(43, 41, 45, 0.518);
 }
 .inputSmall{
   width: 160px;
 }
 .submitBtn{
-  width:70px;
-  height: 70px;
+  width:100px;
+  height: 50px;
   border-radius: 50px;
-  background-color: rgb(234, 95, 73);
+  background-color: rgba(219, 66, 66, 0.696);
   border:none;
   margin:12px;
   color:white;
   font-size: 20px;
-  box-shadow:  2px 5px 10px 3px rgba(43, 41, 45, 0.518);
+  box-shadow:  2px 5px 4px 2px rgba(43, 41, 45, 0.518);
  
 }
 
 .submitBtn:hover{
-  background-color:rgb(233, 43, 43);
+  box-shadow: 2px 2px 10px 6px rgba(247, 248, 249, 0.593);
 }
 .small{
   width:50px;
@@ -150,17 +155,6 @@ td{
   padding:9px;
 }
   
-.fa-home{
-  color:rgba(124, 168, 183, 0.483)
-}
-.fa-circle{
-  color:rgba(50, 128, 102, 0.488);
-  padding:7px;
-}
-
-.fa-circle:hover{
-  color: #66d5a5;
-}
 #page1{
   margin:0
   auto;
@@ -169,7 +163,12 @@ padding-top: 4rem}
 #page2{
   margin:0
   auto;
-padding-top: 5rem;}
+padding-top: 5rem;
+}
+ #bookingNumber{
+  font-size: 35px;
+  text-align: center;
+}
 
 #page3{
   margin:0
@@ -194,23 +193,116 @@ width:600px;
   padding-top: 4rem;
 }
 #page6 h1{
-  color:rgb(238, 238, 249);
+  color:rgb(248, 248, 249);
 }
+ #home{
+   background-color: #3e685ca5;
+   padding-bottom: 53px;
+   padding-top: 43px;
+   color:rgb(158, 178, 192);
+   
+ }
+
 #page10{
   margin:0
    auto;
  }
+  
+ table.page10{
+   font-size:25px;
+  
+ }
 #page11{
-  font-size: 40px;
+  font-size: 50px;
   margin:0
   auto;
+  
 }
+#page11 ul{
+  text-align:left;
+  padding-left: 10%;
+  list-style-type: none;
+  
+ 
+  
+}
+#page11 .btn{
+  margin-left:30%;
+  margin-top:6%;
+}
+
+.checkbox input[type="checkbox"] {
+  opacity: 0;
+}
+
+.checkbox label {
+  position: relative;
+  display: inline-block;
+  font-size: 30px;
+  
+  /*16px width of fake checkbox + 6px distance between fake checkbox and text*/
+  padding-left: 52px;
+}
+
+.checkbox label::before,
+.checkbox label::after {
+  position: absolute;
+  content: "";
+  
+  /*Needed for the line-height to take effect*/
+  display: inline-block;
+}
+
+/*Outer box of the fake checkbox*/
+.checkbox label::before{
+  height: 46px;
+  width: 46px;
+  background-color:  rgba(223, 90, 90, 0.696);
+  left: 0px;
+  
+  border-radius:45px;
+  box-shadow: 2px 2px 60px 1px rgba(53, 53, 54, 0.518);
+
+  top: -4px;
+}
+
+/*Checkmark of the fake checkbox*/
+.checkbox label::after {
+  height: 23px;
+  width: 20px;
+  color: #bcdbcb; 
+  border-left: 3px solid;
+  border-bottom: 4px solid;
+  transform: rotate(-45deg);
+  
+  left: 10px;
+  top: 0px;
+  
+}
+
+/*Hide the checkmark by default*/
+.checkbox input[type="checkbox"] + label::after {
+  content: none;
+}
+
+/*Unhide on the checked state*/
+.checkbox input[type="checkbox"]:checked + label::after {
+  content: "";
+}
+
+/*Adding focus styles on the outer-box of the fake checkbox*/
+.checkbox input[type="checkbox"]:focus + label::before {
+  box-shadow: -17px 6px 30px 1px rgba(254, 254, 255, 0.504);
+  
+}
+
+Resources
 #masterlock{
   
   margin: 0 auto;
 }
 .important{
-  color: rgb(232, 107, 107);
+  color: rgba(223, 90, 90, 0.696);
 }
 @media(max-width:960px){
   .container{
@@ -220,41 +312,58 @@ width:600px;
 }
 @media (max-width: 768px) {
   .header-content {
+    width: 768px;
+    height: 90%;
       position:relative;
       margin:0
       auto; 
-      height: 600px; 
+      padding-top: 7rem;
+     
   } 
   ul{
     width:500px;
     padding-left:4rem;
   margin:0 auto;}
-  
-}
 
+   #page10 table{
+     font-size: 90px;
+   }
+
+   #page11 ul{
+      width:600px;
+      padding-left:2rem;
+    margin:0 auto;
+    list-style-type: none;
+    color:white;
+  }
+}
+  
 
 
 .stars {
   color: #ffe600;
 }
 .textInput{
-  width:90%;
-  height:270px;
+  
+  max-width: 90%;
+  min-height:75px;
+  max-height:300px; 
   margin:0 auto;
-  background-color: #f0f3ea
+  background-color: #f0f3ea;
+  color: #333;
 }
 
 /* Jans forandringer */
 
 
-h2 {
+ h2 {
   text-align: center;
   font-size: 20px;
 }
-h3 {
+ h3 {
   text-align: center;
 }
-.tlf-inline {
+ .tlf-inline {
   display: flex;
   flex-flow: row wrap;
   align-items: center;
@@ -269,7 +378,7 @@ input.tlf {
   height: 60px;
 }
 textarea {
-  height: 80%;
+  height: 10%;
   width: 100%;
 }
 /* Class for STARS */

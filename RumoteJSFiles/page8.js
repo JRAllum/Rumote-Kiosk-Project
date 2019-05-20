@@ -1,21 +1,22 @@
 function page8() {
 	document.getElementById('mainContent').innerHTML = `
       <div id="page8">         
-<p>Please, rate us.</p> <br>
-  <span onmouseover="starmark(this)" onclick="starmark(this)" id="1one" style="font-size:40px;cursor:pointer;"
+<p id="message"> How was your stay? </p> <br>
+  <span onmouseover="starmark(this)" onclick="starmark(this)" id="1one" style="font-size:60px;cursor:pointer;"
     class="fa fa-star checked"></span>
-  <span onmouseover="starmark(this)" onclick="starmark(this)" id="2one" style="font-size:40px;cursor:pointer;"
+  <span onmouseover="starmark(this)" onclick="starmark(this)" id="2one" style="font-size:60px;cursor:pointer;"
     class="fa fa-star "></span>
-  <span onmouseover="starmark(this)" onclick="starmark(this)" id="3one" style="font-size:40px;cursor:pointer;"
+  <span onmouseover="starmark(this)" onclick="starmark(this)" id="3one" style="font-size:60px;cursor:pointer;"
     class="fa fa-star "></span>
-  <span onmouseover="starmark(this)" onclick="starmark(this)" id="4one" style="font-size:40px;cursor:pointer;"
+  <span onmouseover="starmark(this)" onclick="starmark(this)" id="4one" style="font-size:60px;cursor:pointer;"
     class="fa fa-star"></span>
-  <span onmouseover="starmark(this)" onclick="starmark(this)" id="5one" style="font-size:40px;cursor:pointer;"
-    class="fa fa-star"></span>
-  <br><br>
+  <span onmouseover="starmark(this)" onclick="starmark(this)" id="5one" style="font-size:60px;cursor:pointer;"
+    class="fa fa-star"></span><br><br>
+
   
-  <button onclick="page9()" type="button" style="margin-top:10px;margin-left:5px;"
-    class="btn">SUBMIT</button>
+  <button onclick="thanks()" id="rating" type="submit" class="submitBtn" >submit</button><br>
+    <button onclick="page11()" type="button" class="btn ">BACK</button>
+    <button onclick="page9()" type="button" class="btn">PROCEED</button>
   
         </div>    
             `;}
@@ -35,9 +36,11 @@ function page8() {
 			}
 		}
 	}
-// Alert popup with rating score
-	function result() {
-	alert('Rating : ' + count + '\nReview : ' + document.getElementById('comment').value);
-  }
+// Change heading to THANK YOU
+ function thanks(){
+   document.getElementById("message").innerText= "Thank You!"
+ }
+ 
+ 
 
 

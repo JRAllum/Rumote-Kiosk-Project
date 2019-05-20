@@ -33,11 +33,15 @@ function page6() {
                 </div>
               </div>
             </form>
-            <div class="continue">
-              <button onclick="page7()" type="button" class="btn ">
-                PROCEED
+            
+              <button onclick="page10()" type="button" class="btn ">
+                BACK
               </button>
-            </div>
+              <button onclick="page7()" type="button" class="btn ">
+              PROCEED
+            </button>
+              
+            
             </div>`;
 
 

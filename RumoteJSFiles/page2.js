@@ -1,9 +1,9 @@
 function page2() {
     document.getElementById('mainContent').innerHTML = `
-    <div id="page2"><h1> Your booking number </h1> <br><br>
+    <div id="page2"><p> Your booking number </p> <br><br>
 <div>
-    <input type="text" id="bookingNumber" class="inputForm" placeholder= >
-    <button onclick="page3()" class="submitBtn" >OK</button><br>
+    <input type="text" id="bookingNumber" class="inputForm" placeholder="0 0 0 0 0" >
+    <button onclick="page3()" class="submitBtn" >submit</button><br>
 </div>
 </div>
     `;
