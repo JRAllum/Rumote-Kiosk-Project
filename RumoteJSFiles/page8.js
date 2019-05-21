@@ -15,10 +15,10 @@ function page8() {
 
   
   <button onclick="thanks()" id="rating" type="submit" class="submitBtn" >submit</button><br>
-    <button onclick="page11()" type="button" class="btn ">BACK</button>
-    <button onclick="page9()" type="button" class="btn">PROCEED</button>
-  
-        </div>    
+  <h1 id="rateNum"></h1>
+  <button onclick="page11()" type="button" class="btn ">BACK</button>
+  <button onclick="page9()" type="button" class="btn">PROCEED</button>
+      </div>    
             `;}
 
 // Function for starrating
@@ -38,9 +38,19 @@ function page8() {
 	}
 // Change heading to THANK YOU
  function thanks(){
-   document.getElementById("message").innerText= "Thank You!"
+   document.getElementById("message").innerText= "Thank you for your feedback!"
  }
- 
- 
+ //.........Fire base......
+const db = firebase.firestore();
+
+const ratingNum = document.querySelector('#rate-num');
+
+db.collection('stars').get().then((snapshot)=>{
+  snapshot.docs.forEach(doc=>{
+    console.log(doc.data())
+  })
+  
+})
+
 
 

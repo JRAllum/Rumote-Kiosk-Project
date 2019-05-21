@@ -3,7 +3,7 @@ function page1() {
     
     <div id="page1">
     <p> Welcome to Alpin Lodge </p><br><br>
-    <i class="fas fa-home fa-4x important"></i> <br>
+    <i class="fas fa-home fa-3x important"></i> <br>
      <br>
     <div>
     <button onclick= "page11()"   type="button" class="btn" > CHECK OUT </button>
