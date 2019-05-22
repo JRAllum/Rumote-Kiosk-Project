@@ -14,7 +14,8 @@ function page8() {
   <span onmouseover="starmark(this)" onclick="starmark(this)"  id="5" style="font-size:60px;cursor:pointer;"
     class="fa fa-star"></span> <br><br>
   <button onclick="thanks()" id="rating" type="submit" class="submitBtn" >submit</button><br>
-  </div>
+  </div> 
+  <div id="average"></div>
 
   <button onclick="page11()" type="button" class="btn ">BACK</button>
   <button onclick="page9()" type="button" class="btn">PROCEED</button>
@@ -52,26 +53,25 @@ function thanks() {
     rating: currentRating
   })
 
-  document.getElementById("message").innerText = "Thank you for your feedback!"
-}
+  document.getElementById("message").innerText = "Thank you!"
 
+  db.collection('stars').get().then((snapshot)=>{
+    var ratings = snapshot.docs
+      .map(x => x.data())
+      .filter(x => x.rating != undefined)
+      .map(x => parseInt(x.rating));
 
-db.collection('stars').get().then((snapshot)=>{
-  var ratings = snapshot.docs
-    .map(x => x.data())
-    .filter(x => x.rating != undefined)
-    .map(x => parseInt(x.rating));
+    var sum = 0
+    ratings.forEach(r => {
+      sum += r
+    });
 
-  var sum = 0
-  ratings.forEach(r => {
-    sum += r
+    var average = ratings.length == 0 ? 0 : Math.ceil(sum / ratings.length);
+
+    console.log(average)
+    document.getElementById("average").innerHTML = `<h1> our average rating is: ${average}</h1>`
   });
 
-  var average = ratings.length == 0 ? 0 : sum / ratings.length;
-
-  console.log(average)
-});
-
-
+}
 
 
