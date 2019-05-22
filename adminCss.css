@@ -12,14 +12,13 @@ h1{
     margin-top: 0;
     text-align: center;
     background-color: #424747c8;
-    padding-top:150px;
+    padding-top:0px;
 }
 
 h2{
     color: white;
     font-size: 20px;
     letter-spacing: 2px;
-    
     text-align: center;
     background-color: #4247478d;
     padding-bottom:162px;
@@ -156,6 +155,84 @@ form:after{
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
   }
+
+  /*clouds*/
+  .wrapper {
+    width: 100%;
+    height: 120px;
+    
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+  background:  #424747c8;
+  z-index: 10;
+}
+.wrapper div, .wrapper div::after, .wrapper div::before {
+  position: absolute;
+}
+.cloud {
+  width: 36px;
+  height: 30px;
+  top: 50px;
+  left: 110px;
+  background: #ecf0f1;
+  animation: cloud 90s linear infinite;
+}
+.cloud::before {
+  width: 50px;
+  height: 50px;
+  background: #ecf0f1;
+  content: "";
+  border-radius: 50%;
+  bottom: 0;
+  left: -25px;
+}
+.cloud::after {
+  width: 40px;
+  height: 40px;
+  background: #ecf0f1;
+  content: "";
+  border-radius: 50%;
+  bottom: 0;
+  left: 15px;
+}
+
+@keyframes cloud {
+  0% { transform: translateX(-2000px);}
+  100% { transform: translateX(2000px);}
+}
+
+.cloud2 {
+  width: 18px;
+  height: 15px;
+  top: 30px;
+  left: 125px;
+  background: #ecf0f1;
+  animation: cloud2 50s linear infinite;
+}
+.cloud2::before {
+  width: 25px;
+  height: 25px;
+  background: #ecf0f1;
+  content: "";
+  border-radius: 50%;
+  bottom: 0;
+  left: 7px;
+}
+.cloud2::after {
+  width: 20px;
+  height: 20px;
+  background: #ecf0f1;
+  content: "";
+  border-radius: 50%;
+  bottom: 0;
+  left: -8px;
+}
+@keyframes cloud2 {
+  0% { transform: translateX(-2000px);}
+  100% { transform: translateX(2000px);}
+}
+  
   @media(max-width:375px){
     .form input{
     font-size: 16px;   
