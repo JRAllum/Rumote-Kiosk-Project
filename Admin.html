@@ -9,79 +9,55 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
 
-  <link rel="stylesheet" href="rumoteCustomizedCSS.css" />
-  <link rel="stylesheet" href="CustomCheckbox.css" />
-  <style>
-    .admin input {
-      width: 80%;
-      padding: 1em;
-      border: 1px solid #c9e6ff;
-    }
-
-    .admin form {
-      width: 100%;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-    }
-
-    .admin form p {
-      margin: 5px;
-    }
-
-    .admin form label {
-      margin: 5px;
-    }
-  </style>
-
+  <link rel="stylesheet" href="adminCSS.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+ 
 </head>
 
 <body>
-  <div class="wrapper">
-    <div class="box header"></div>
-    <div class="box content">
-      <div id="mainContent" class="center">
-        <div class="admin">
-          <form id="userForm">
-            <p>
-              <label>Name</label>
-              <input type="text" name="name" id="name" required>
-            </p>
-            <p>
-              <label>Bookingnummer</label>
-              <input type="number" name="bookingnummer" id="bookingnummer" required>
-            </p>
-            <p>
-              <label>Fra</label>
-              <input type="date" name="dato" id="fra" required>
-            </p>
-            <p>
-              <label>Til</label>
-              <input type="date" name="dato" id="til" required>
-            </p>
-            <p>
-              <label class="container">Order cleaning
-                <input type="checkbox" name="cleaning" id="cleaning">
-                <span class="checkmark"></span>
-              </label>
-            </p>
-            <p>
-              <label class="container">Order bedlinen
-                <input type="checkbox" name="bedlinen" id="bedlinen">
-                <span class="checkmark"></span>
-              </label>
-            </p>
-            <p>
-              <button type="submit" class="btn btn-primary bottomright">Submit</button>
-            </p>
-          </form>
-        </div>
-      </div>
-    </div>
+ <h1> Get Booking <br>
+  <i class="fas fa-ellipsis-h"></i> </h1>
+  <div class="content">
+    <form id="userForm">
+  
+      <input type="text" name="name" placeholder="Name" id="name" required>
+      <input type="ppassword" name="bookingnummer" placeholder="Bookingnumber" id="bookingnummer" required>
+ 
+  <br><br>
+<div>
+      <label>from:</label>
+      <input type="date" name="dato" id="fra" required>
+     
+      <label>to:</label>
+      <input type="date" name="dato" id="til" required>
+</div>
+      <br><br>
+  
+      <label class="container">Order cleaning
+        <input type="checkbox" name="cleaning" id="cleaning">
+        <span class="checkmark"></span>
+        <button type="submit" class="btn">SUBMIT</button> 
+      </label>
+  
+      <label class="container">Order bedlinen
+        <input type="checkbox" name="bedlinen" id="bedlinen">
+        <span class="checkmark"></span>
+      </label>
+        
+</form>
+       
     <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-firestore.js"></script>
     <script src=RumoteJSFiles/Admin.js> </script>
-    <div class="box footer"></div>
+    
   </div>
+  <h2> 
+    <i class="fab fa-facebook-square fa-2x"></i>
+    <i class="fas fa-ellipsis-h"></i>
+    <i class="fab fa-twitter-square fa-2x"></i>
+    <i class="fas fa-ellipsis-h"></i>
+    <i class="fab fa-pinterest fa-2x"></i>
+  </h2>
 
 </body>
 

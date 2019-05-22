@@ -1,10 +1,11 @@
 /* The container */
 .container {
-    display: block;
+    
     position: relative;
-    padding-left: 35px;
+    padding-left: 45px;
+    
     margin-bottom: 12px;
-    cursor: pointer;
+
     font-size: 22px;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -16,7 +17,6 @@
   .container input {
     position: absolute;
     opacity: 0;
-    cursor: pointer;
     height: 0;
     width: 0;
   }
