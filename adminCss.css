@@ -119,6 +119,7 @@ form:after{
     background-color:#79948c;;
     border-bottom-color: #eee;
     border-radius:50px;
+    box-shadow: 4px 5px 2px 2px rgba(180, 180, 190, 0.1);
   }
   
   /* On mouse-over, add a grey background color */
