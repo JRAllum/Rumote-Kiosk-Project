@@ -4,6 +4,7 @@ function page2() {
 <div>
     <input type="text" id="bookingNumber" class="inputForm" placeholder="0 0 0 0 0" >
     <button onclick="page3()" class="submitBtn" >submit</button><br>
+    <button onclick="page1()" type="button" class="btn" "">BACK</button>
 </div>
 </div>
     `;

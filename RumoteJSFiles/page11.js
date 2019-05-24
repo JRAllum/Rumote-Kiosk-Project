@@ -23,6 +23,7 @@ function page11() {
      </div>
     <div>
     
+    <button onclick="page1()" type="button" class="btn" "">BACK</button>
     <button onclick="page8()" type="button" id="proceed" class="btn" style="display: none"> PROCEED </button>
     </div>
 
