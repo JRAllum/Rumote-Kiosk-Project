@@ -37,7 +37,7 @@ function page6() {
               <button onclick="page10()" type="button" class="btn ">
                 BACK
               </button>
-              <button onclick="page7()" type="button" class="btn ">
+              <button onclick="page7()" type="button" class="btn continue">
               PROCEED
             </button>
               

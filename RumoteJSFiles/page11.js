@@ -38,7 +38,7 @@ function checkBeforeProceed() {
   var checkBox3 = document.getElementById("checkbox_3");
   var btn = document.getElementById("proceed");
   if (checkBox1.checked == true&&checkBox2.checked == true&&checkBox3.checked == true){
-    btn.style.display = "block";
+    btn.style.display = "inline";
   } else {
      btn.style.display = "none";
   }    

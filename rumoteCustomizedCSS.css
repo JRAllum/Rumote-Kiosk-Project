@@ -229,14 +229,14 @@ width:600px;
   
 }
 #page11 .btn{
-  margin-left:30%;
+  margin-left:10%;
   margin-top:6%;
 }
 
-//making checkboxes
+/* making checkboxes
 .checkbox input[type="checkbox"] {
   opacity: 0;
-}
+} */
 
 .checkbox label {
   position: relative;
@@ -510,11 +510,14 @@ label .field.is-focused + span {
 }
 
 .success,
-.continue,
 .error {
   display: none;
   font-size: 15px;
 }
+.continue {
+  display: none;
+}
+
 
 .pay.gone {
   display: none;
