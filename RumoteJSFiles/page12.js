@@ -4,7 +4,7 @@ function page12() {
                 <p>You can get your keys from Masterlock now.</p>
               </div>
               <div >
-            <img width="35%" height="35%" src="masterlock.gif" autoplay="" loop="">
+            <img width="35%" height="35%" src="masterlock.gif" autoplay="" loop="" onclick="page1()">
             
         </div>
               `;
