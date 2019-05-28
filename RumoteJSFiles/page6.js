@@ -37,7 +37,7 @@ function page6() {
               <button onclick="page10()" type="button" class="btn ">
                 BACK
               </button>
-              <button onclick="page7()" type="button" class="btn continue">
+              <button onclick="page7()" type="button" class="btn">
               PROCEED
             </button>
               
@@ -94,11 +94,11 @@ function page6() {
 
               function setOutcome(result) {
                 var successElement = document.querySelector(".success");
-                var continueElement = document.querySelector(".continue");
+                // var continueElement = document.querySelector(".continue");
                 var errorElement = document.querySelector(".error");
                 var payElement = document.querySelector(".pay");
                 successElement.classList.remove("visible");
-                continueElement.classList.remove("visible");
+                // continueElement.classList.remove("visible");
                 errorElement.classList.remove("visible");
 
                 if (result.token) {
@@ -107,7 +107,7 @@ function page6() {
                   successElement.querySelector(".token").textContent =
                     result.token.id;
                   successElement.classList.add("visible");
-                  continueElement.classList.add("visible");
+                  // continueElement.classList.add("visible");
                   payElement.classList.add("gone");
                 } else if (result.error) {
                   errorElement.textContent = result.error.message;
